@@ -256,6 +256,9 @@
               <button type="button" id="night-mode-btn" class="boost-btn">
                 🌙 Night Coding Session
               </button>
+              <button type="button" id="hire-btn" class="boost-btn">
+                ✨ Recruiter Mode
+              </button>
               <button type="button" id="boost-btn" class="boost-btn">
                 Boost Motivation 🚀
               </button>
@@ -284,6 +287,13 @@
     .getElementById('night-mode-btn')
     .addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
+    });
+      document
+    .getElementById('hire-btn')
+    .addEventListener('click', function() {
+      document.body.classList.toggle('hire-mode');
+
+      alert('Candidate unlocked successfully ✅');
     });
 </script>
   </body>
