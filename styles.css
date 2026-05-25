@@ -516,7 +516,7 @@ body {
   color: #b8b0a8 !important;
 }
 
-.hire-mode .resume {
+.resume.hire-mode {
   animation: glow 1.5s infinite alternate;
 }
 
@@ -527,5 +527,57 @@ body {
 
   to {
     box-shadow: 0 0 25px rgba(181, 101, 29, 0.9);
+  }
+}
+
+.resume.panic {
+  animation: shake 1.2s ease;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 35px rgba(255, 107, 107, 0.7);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-18px);
+  }
+
+  20% {
+    transform: translateX(18px);
+  }
+
+  30% {
+    transform: translateX(-16px);
+  }
+
+  40% {
+    transform: translateX(16px);
+  }
+
+  50% {
+    transform: translateX(-12px);
+  }
+
+  60% {
+    transform: translateX(12px);
+  }
+
+  70% {
+    transform: translateX(-8px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-4px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
