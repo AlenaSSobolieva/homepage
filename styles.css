@@ -461,3 +461,123 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   animation: pop 0.3s ease;
 }
+
+.dark-mode {
+  background: #1f1f1f;
+  transition: 0.4s ease;
+}
+
+.dark-mode .resume {
+  background: #2a2a2a;
+  box-shadow: 0 0 20px rgba(181, 101, 29, 0.3);
+}
+
+.dark-mode .resume__block {
+  border-color: #b5651d;
+}
+
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p,
+.dark-mode span,
+.dark-mode li {
+  color: #f5f5f5 !important;
+}
+
+.dark-mode .likes,
+.dark-mode .dislikes,
+.dark-mode .additional-info__education-university,
+.dark-mode .additional-info__certificates-card,
+.dark-mode .experiences__company {
+  background: #333;
+}
+
+.dark-mode .boost-btn {
+  background: #8b5e3c;
+  color: white;
+}
+
+.dark-mode .experiences__company-project {
+  background: #333;
+}
+
+.dark-mode .experiences__company-project-role {
+  color: #d6d6d6;
+}
+
+.dark-mode .intro {
+  background: #2c2c2c;
+  border-left: 4px solid #b5651d;
+  border-radius: 16px;
+}
+
+.dark-mode .intro_text {
+  color: #b8b0a8 !important;
+}
+
+.resume.hire-mode {
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(181, 101, 29, 0.3);
+  }
+
+  to {
+    box-shadow: 0 0 25px rgba(181, 101, 29, 0.9);
+  }
+}
+
+.resume.panic {
+  animation: shake 1.2s ease;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 35px rgba(255, 107, 107, 0.7);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-18px);
+  }
+
+  20% {
+    transform: translateX(18px);
+  }
+
+  30% {
+    transform: translateX(-16px);
+  }
+
+  40% {
+    transform: translateX(16px);
+  }
+
+  50% {
+    transform: translateX(-12px);
+  }
+
+  60% {
+    transform: translateX(12px);
+  }
+
+  70% {
+    transform: translateX(-8px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-4px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
